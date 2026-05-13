@@ -44,6 +44,12 @@ export function LessonView({ lesson, completed, onComplete }: Props) {
         </div>
       </section>
 
+      <section className="fun-explanation explain-box">
+        <p className="eyebrow">Anime / movie analogy</p>
+        <h2>Fun version</h2>
+        <p>{lesson.funExplanation}</p>
+      </section>
+
       <section>
         <h2>Jargon decoder</h2>
         <p className="muted">Terms in this lesson: {jargonMap}</p>

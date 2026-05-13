@@ -34,6 +34,9 @@ function App() {
         lesson.module,
         lesson.difficulty,
         lesson.whyItMatters,
+        lesson.dumbExplanation,
+        lesson.developerExplanation,
+        lesson.funExplanation,
         ...lesson.jargon.map((j) => `${j.term} ${j.meaning} ${j.useCase}`),
         ...lesson.sourceFocus,
       ].join(' ').toLowerCase()
@@ -93,7 +96,7 @@ function App() {
           <div>
             <p className="eyebrow">Personal curriculum generated from your source list</p>
             <h2>Learn AI/ML/LLMs without Googling every word</h2>
-            <p>This platform teaches each idea twice: first in plain language, then in developer terms. Every lesson includes jargon decoding, formulas, algorithms, mistakes, examples, practice, and quizzes.</p>
+            <p>This platform teaches each idea three ways: plain-language, developer-level, and a fun anime/movie analogy version. Every lesson includes jargon decoding, formulas, algorithms, mistakes, examples, practice, and quizzes.</p>
           </div>
           <div className="path-card">
             <h3>Learning path</h3>

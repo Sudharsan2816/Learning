@@ -317,6 +317,26 @@ section h2 { margin-bottom: 12px; }
 
 .explain-box.simple { background: #ecfeff; border-color: #a5f3fc; }
 .explain-box.developer { background: #f5f3ff; border-color: #ddd6fe; }
+.fun-explanation {
+  background: linear-gradient(135deg, #fff7ed, #fef3c7);
+  border-color: #fdba74;
+  position: relative;
+  overflow: hidden;
+}
+
+.fun-explanation::before {
+  content: '🍿';
+  position: absolute;
+  right: 22px;
+  top: 14px;
+  font-size: 42px;
+  opacity: 0.24;
+}
+
+.fun-explanation p:last-child {
+  font-size: 17px;
+  color: #573a12;
+}
 
 .section-heading-row {
   display: flex;
